@@ -63,9 +63,67 @@
         .info{
             font-size: 20px;
         }
+        .navbar{
+            background-color: #e6e6e6;
+            position: sticky;
+            top: 10px;
+            height: 40px;
+            display: flex;
+        }
+        .f-brand{
+            height: 45px;
+            margin-left: 10px;
+        }
+        .menu{
+            height: 45px;
+            margin-left: 800px;
+        }
+        .menu:hover{
+            border: 2px solid black;
+            transition: 0.2;
+        
+        }
+
+        
+        .search{
+            height: 45px;
+            margin-left:200px;
+        
+        }
+        .search:hover{
+            border: 2px solid black;
+            transition: 0.2;
+        }
+        .signup{
+            height: 45px;
+            margin-left: 200px;
+            
+        }
+        .signup:hover{
+            border: 2px solid black;
+            transition: 0.2;
+        }
+        .brand{
+            display: flex;
+        }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div class="brand">
+            <img src="./../img/flower.png"class="f-brand">&nbsp;&nbsp;&nbsp;
+            <img src="./../img/paws.png"class="f-brand">
+        </div>
+        <div>
+            <img src="./../img/menu.png"class="menu">
+        </div>
+        <div>
+            <img src="./../img/search.png"class="search">
+        </div>
+        <div> 
+            <img src="./../img/signup.png"class="signup">
+        </div>
+    </div>
     <h1 class="heading">FLOWERS</h1>
     <div class="container">
         <div class="item">
