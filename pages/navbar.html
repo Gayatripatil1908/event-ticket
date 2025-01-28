@@ -23,7 +23,7 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row-reverse;
-            justify-content:space-evenly;
+            justify-content:space-around;
             padding: 5px;
             border-radius: 5px;
             margin: auto;
@@ -63,78 +63,64 @@
         .info{
             font-size: 20px;
         }
-        .navbar{
-            background-color: #e6e6e6;
-            position: sticky;
-            top: 10px;
-            height: 40px;
-            display: flex;
-            
-        }
-        .f-brand{
-            height: 45px;
-            margin-left: 10px;
-        }
-        .menu{
-            height: 45px;
-            margin-left: 800px;
-        }
-        .menu:hover{
-            border: 2px solid black;
-            transition: 0.2;
         
-        }
+       
 
         
-        .search{
-            height: 45px;
-            margin-left:200px;
         
+        .navbar{
+            background-color:gray;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            display: flex;
+            align-items: center;
         }
-        .search:hover{
-            border: 2px solid black;
-            transition: 0.2;
+        .menu{
+            margin-left: 500px;
         }
-        .signup{
-            height: 45px;
-            margin-left: 200px;
-            
+        .search{
+            margin-left: 400px;
         }
-        .signup:hover{
-            border: 2px solid black;
-            transition: 0.2;
+        .brand-logo{
+            height: 50px;
         }
         .brand{
             display: flex;
+            align-items: center;
         }
+        .menu-item{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 20px;
+        }
+        .menu-item:hover{
+            text-decoration: underline;
+        }
+        .search-box{
+            padding: 5px 20px;
+            border-radius: 30px;
+            border: none;
+
+        }
+        
+        
 
         /* laptop*/
         @media (min-width:801px) and (max-width:1200px) {
-            .search{
+            .search-box{
                 display: none;
-            
             }
             .menu{
-            height: 30px;
-            margin-left: 400px;
-        }
-        .navbar{
-            background-color: tomato;
-            position: sticky;
-            top: 10px;
-            height: 40px;
-            display: flex;
-        }
-        .search{
-            height: 30px;
-            margin-left:200px;
-        
-        }
-        .signup{
-            height: 30px;
-            margin-left: 200px;
+                margin-left: 400px;
+            }
             
-        }
+       
+       
             
         }
     </style>
@@ -142,17 +128,16 @@
 <body>
     <div class="navbar">
         <div class="brand">
-            <img src="./../img/flower.png"class="f-brand">&nbsp;&nbsp;&nbsp;
-            <img src="./../img/paws.png"class="f-brand">
+            <img src="./../img/flower.png"class="brand-logo"alt="Flower logo">
+            <h2>Flowers</h2>
         </div>
-        <div>
-            <img src="./../img/menu.png"class="menu">
+        <div class="menu">
+            <a href="#" class="menu-item">Home</a>
+            <a href="#" class="menu-item">About</a>
+            <a href="#" class="menu-item">Explore</a>
         </div>
-        <div>
-            <img src="./../img/search.png"class="search">
-        </div>
-        <div> 
-            <img src="./../img/signup.png"class="signup">
+        <div class="search">
+            <input type="text"placeholder="search">
         </div>
     </div>
     <h1 class="heading">FLOWERS</h1>
