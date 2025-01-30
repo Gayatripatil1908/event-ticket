@@ -13,6 +13,8 @@
             font-size: 50px;
             border-radius: 10px;
             border: solid 3px white;
+            
+            flex-wrap: wrap;
     
     
         
@@ -63,11 +65,6 @@
         .info{
             font-size: 20px;
         }
-        
-       
-
-        
-        
         .navbar{
             background-color:gray;
             color: white;
@@ -83,7 +80,7 @@
             margin-left: 500px;
         }
         .search{
-            margin-left: 400px;
+            margin-left: 300px;
         }
         .brand-logo{
             height: 50px;
@@ -101,28 +98,56 @@
         .menu-item:hover{
             text-decoration: underline;
         }
+       
         .search-box{
-            padding: 5px 20px;
             border-radius: 30px;
             border: none;
+            padding: 5px 20px;
 
         }
-        
-        
-
-        /* laptop*/
-        @media (min-width:801px) and (max-width:1200px) {
+        .hamburger{
+            height: 50px;
+            display: none;
+        }
+        /*mobile*/
+        @media (max-width:600px) {
             .search-box{
                 display: none;
             }
             .menu{
-                margin-left: 400px;
-            }
-            
-       
-       
-            
+            display: none;
         }
+        .hamburger{
+            display: block;
+            margin-left: auto;
+            margin-right: 50px;
+        }
+           
+        }
+        /*tablet*/
+        @media (min-width:610px) and (max-width: 800px) {
+            .search-box{
+                display: none;
+            }
+            .menu{
+            margin-left: 200px;
+        }
+        
+        }
+
+        /* laptop*/
+        @media (min-width:801px) and (max-width:1200) {
+            .search-box{
+                display: none;
+            }
+            .menu{
+            margin-left: 300px;
+        }
+
+        
+       }
+            
+        
     </style>
 </head>
 <body>
@@ -137,8 +162,9 @@
             <a href="#" class="menu-item">Explore</a>
         </div>
         <div class="search">
-            <input type="text"placeholder="search">
+            <input type="text"placeholder="search" class="search-box">
         </div>
+        <img src="./../img/menus.png"class="hamburger">
     </div>
     <h1 class="heading">FLOWERS</h1>
     <div class="container">
